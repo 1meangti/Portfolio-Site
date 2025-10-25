@@ -23,13 +23,33 @@
     <section id="about">
         <h2>About Me</h2>
         <img src="images/profile.jpg" alt="My Profile Picture">
-        <p>Hello! My name is [Your Name], and I am a web developer passionate about building creative and functional websites.</p>
+        <p>Hello! My name is Brently Byers, and I am a web developer passionate about building creative and functional websites.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
+    <h2>My Projects</h2>
+    
+    <div id="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web Development</button>
+        <button onclick="filterProjects('python')">Python Projects</button>
+    </div>
+
+    <div class="project" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>A website showcasing my resume, projects, and skills.</p>
+    </div>
+
+    <div class="project" data-category="python">
+        <h3>Data Analysis Script</h3>
+        <p>A Python script that processes and visualizes data.</p>
+    </div>
+
+    <div class="project" data-category="web">
+        <h3>To-Do List App</h3>
+        <p>A simple JavaScript to-do list application.</p>
+    </div>
     </section>
 
     <!-- Contact Section -->
@@ -47,3 +67,14 @@
     <script src="script.js"></script>
 </body>
 </html>
+<section id="about" class="fade-in">
+    <h2>About Me</h2>
+</section>
+
+<section id="projects" class="fade-in">
+    <h2>Projects</h2>
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+</section>
